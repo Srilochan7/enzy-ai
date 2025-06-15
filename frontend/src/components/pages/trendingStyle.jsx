@@ -1,45 +1,48 @@
 import React from 'react'
 
 function TrendingStyles() {
-    const styles = [
+  const styles = [
     {
       id: 1,
       title: "Chic Summer Looks",
-      image: "banner", // placeholder for actual image
-      bgColor: "bg-teal-700"
+      image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&h=600&fit=crop&crop=faces",
+      bgColor: "bg-gradient-to-br from-teal-100 to-teal-200"
     },
     {
       id: 2,
       title: "Casual Streetwear",
-      image: "csl",
-      bgColor: "bg-gray-200"
+      image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=600&fit=crop&crop=faces",
+      bgColor: "bg-gradient-to-br from-gray-100 to-gray-200"
     },
     {
       id: 3,
       title: "Accessorize Your Style",
-      image: "cs",
-      bgColor: "bg-orange-200"
+      image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=600&fit=crop&crop=faces",
+      bgColor: "bg-gradient-to-br from-orange-100 to-orange-200"
     },
     {
       id: 4,
       title: "Elegant Evening Wear",
-      image: "ays",
-      bgColor: "bg-gray-100"
+      image: "https://images.unsplash.com/photo-1566479179817-c6a9b0b4d4f3?w=400&h=600&fit=crop&crop=faces",
+      bgColor: "bg-gradient-to-br from-purple-100 to-pink-100"
     }
   ];
+
   return (
-   <div className="mb-16">
-      <h2 className="text-3xl font-semibold text-gray-800 mb-8">Trending Styles</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="px-6 lg:px-12 xl:px-20 py-16">
+      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-12">Trending Styles</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {styles.map((style) => (
           <div key={style.id} className="group cursor-pointer">
-            <div className={`${style.bgColor} rounded-2xl aspect-[3/4] mb-4 flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105`}>
-              {/* Placeholder for styled figure */}
-              <div className="w-24 h-32 bg-white/20 rounded-lg flex items-center justify-center">
-                <div className="w-16 h-24 bg-white/30 rounded-full"></div>
-              </div>
+            <div className={`${style.bgColor} rounded-2xl aspect-[3/4] mb-6 overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl relative`}>
+              <img 
+                src={style.image} 
+                alt={style.title}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-300"></div>
             </div>
-            <h3 className="text-lg font-medium text-gray-800 text-center group-hover:text-pink-500 transition-colors duration-300">
+            <h3 className="text-lg lg:text-xl font-semibold text-gray-800 group-hover:text-pink-500 transition-colors duration-300">
               {style.title}
             </h3>
           </div>
