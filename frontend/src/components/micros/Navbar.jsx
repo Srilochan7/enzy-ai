@@ -42,14 +42,14 @@ function Navbar() {
           </button>
           
           {/* User Icon */}
-          <button className="p-2 text-gray-600 hover:text-gray-900 transition-colors duration-200">
+          {/* <button className="p-2 text-gray-600 hover:text-gray-900 transition-colors duration-200">
             <User size={20} />
-          </button>
+          </button> */}
           
           {/* Profile Avatar */}
           <div className="w-8 h-8 rounded-full overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=100&h=100&fit=crop&crop=face" 
+              src="https://images.unsplash.com/photo-1494790108756-2616b612b47c?w=100&h=100&fit=crop&crop=face" 
               alt="Profile"
               className="w-full h-full object-cover"
             />
