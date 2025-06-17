@@ -23,7 +23,7 @@ function TrendingStyles() {
     {
       id: 4,
       title: "Elegant Evening Wear",
-      image: "https://images.unsplash.com/photo-1566479179817-c6a9b0b4d4f3?w=400&h=600&fit=crop&crop=faces",
+      image: "https://images.unsplash.com/photo-1469334031219-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600&q=80",
       bgColor: "bg-gradient-to-br from-purple-100 to-pink-100"
     }
   ];
