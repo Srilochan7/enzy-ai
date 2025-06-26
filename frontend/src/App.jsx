@@ -5,6 +5,7 @@ import './index.css';
 import TrendingStyles from './components/pages/trendingStyle.jsx';
 import Hero from './components/pages/hero.jsx';
 import Footer from './components/pages/Footer.jsx';
+import Chat from './components/pages/ChatPage.jsx'
 
 function App() {
   const [color, setColor] = useState('black'); // Initial color is black
@@ -15,6 +16,7 @@ function App() {
         <div className='max-w-7xl mx-auto'>
           <Hero/>
           <TrendingStyles/>
+          <Chat/>
           <Footer/>
         </div>
       </div>
